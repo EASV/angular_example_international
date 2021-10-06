@@ -1,0 +1,10 @@
+<h1 class="hello">
+  Hello {{name}} you are NOT {{age}} in dog years that is {{dogAge}}
+</h1>
+<h3>Age</h3>
+<input type="number" [(ngModel)]="age" >
+<h3>Name</h3>
+<input  [(ngModel)]="name">
+
+<button (click)="getDogYears()" [disabled]="age > 40">Click to calculate dog years...</button>
+
